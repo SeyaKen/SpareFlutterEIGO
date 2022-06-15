@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1042587351457",
+    "project_id": "studeng",
+    "storage_bucket": "studeng.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042587351457:android:252804c5c2b41d802833e0",
+        "android_client_info": {
+          "package_name": "com.example.flutterstudeng"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042587351457-ob54brgqegi82iv7dab1uhrhsdr23gr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjtbukJDkwYcyqoSykBPRl6INJXQ13GMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042587351457-ob54brgqegi82iv7dab1uhrhsdr23gr5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1042587351457-ah6q90a1edrg6qfcs1cuf3p4bp2tibev.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "flutterstudeng"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
