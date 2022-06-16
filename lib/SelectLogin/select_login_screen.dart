@@ -112,7 +112,6 @@ class _SelectLoginScreenState extends State<SelectLoginScreen> {
                                         AuthService().errorBox(context,
                                             '一致するユーザーが見つかりません。新規登録画面から登録してください。');
                                       }
-                                      ;
                                     }
                                   },
                                   child: Container(

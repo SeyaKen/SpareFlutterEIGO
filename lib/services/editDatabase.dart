@@ -56,9 +56,9 @@ class editService extends ChangeNotifier {
         FirebaseFirestore.instance.collection("chatrooms");
     QuerySnapshot eventsQuery =
         await ref.where("users", arrayContains: uid).get();
-    eventsQuery.docs.forEach((msgDoc) {
-      msgDoc.reference.update({'${uid}': imageURL});
-    });
+    for (var msgDoc in eventsQuery.docs) {
+      msgDoc.reference.update({uid: imageURL});
+    }
     fetchImage();
   }
 

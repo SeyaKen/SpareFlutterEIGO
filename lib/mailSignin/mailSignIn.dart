@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class mailSignIn extends StatefulWidget {
   final Function toggleView;
-  mailSignIn(this.toggleView);
+  const mailSignIn(this.toggleView);
 
   @override
   _SignInState createState() => _SignInState();
@@ -112,7 +112,7 @@ class _SignInState extends State<mailSignIn> {
                                   horizontal: 10, vertical: 13),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
-                                  color: const Color(0xff0095f6),
+                                  color: Color(0xff0095f6),
                                 ),
                               ),
                               enabledBorder: OutlineInputBorder(
@@ -146,7 +146,7 @@ class _SignInState extends State<mailSignIn> {
                                       horizontal: 10, vertical: 13),
                                   focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                      color: const Color(0xff0095f6),
+                                      color: Color(0xff0095f6),
                                     ),
                                   ),
                                   enabledBorder: OutlineInputBorder(

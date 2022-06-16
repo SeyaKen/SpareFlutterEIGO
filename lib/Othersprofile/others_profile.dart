@@ -1,9 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterstudeng/profile/answers.dart';
-import 'package:flutterstudeng/profile/edit_profile.dart';
 import 'package:flutterstudeng/profile/quesions.dart';
-import 'package:flutterstudeng/services/auth.dart';
 import 'package:flutterstudeng/services/database.dart';
 
 class OthersProfile extends StatefulWidget {

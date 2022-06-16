@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterstudeng/ScoreReport/Toeic_Report.dart';
+import 'package:flutterstudeng/ScoreReport/toeic_report.dart';
 
 class ScoreReport extends StatefulWidget {
-  ScoreReport({Key? key}) : super(key: key);
+  const ScoreReport({Key? key}) : super(key: key);
 
   @override
   State<ScoreReport> createState() => _ScoreReportState();
@@ -31,8 +31,7 @@ class _ScoreReportState extends State<ScoreReport> {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
         elevation: 0,
-        title: const Text(
-            'スコア',
+        title: const Text('スコア',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.black,
@@ -47,14 +46,13 @@ class _ScoreReportState extends State<ScoreReport> {
         children: [
           InkWell(
             onTap: () {
-              // Navigator.push(
-              //         context,
-              //         PageRouteBuilder(
-              //           pageBuilder: (_, __, ___) => const ToeicReport(
-              //           ),
-              //           transitionDuration: const Duration(seconds: 0),
-              //         ),
-              //       );
+                Navigator.push(
+                  context,
+                  PageRouteBuilder(
+                    pageBuilder: (_, __, ___) => const LineGraph(),
+                    transitionDuration: const Duration(seconds: 0),
+                  ),
+                );
             },
             child: Container(
               width: MediaQuery.of(context).size.width * 0.45,

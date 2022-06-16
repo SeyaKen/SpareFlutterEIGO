@@ -137,6 +137,8 @@ class _ProfilePageState extends State<ProfilePage> {
                             width: MediaQuery.of(context).size.width * 0.9,
                             child: Text(
                               snapshot.data!.docs[0]['selfIntroduction'],
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
                               style: const TextStyle(
                                 fontSize: 19,
                               ),
@@ -252,9 +254,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       Flexible(
                         child: SizedBox(
                           height: MediaQuery.of(context).size.width,
-                          child: switchColor0
-                              ? Questions(uid)
-                              : Answers(uid),
+                          child: switchColor0 ? Questions(uid) : Answers(uid),
                         ),
                       ),
                     ],

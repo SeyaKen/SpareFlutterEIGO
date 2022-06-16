@@ -45,6 +45,7 @@ dependencies:
   font_awesome_flutter:
   path_provider:
   shared_preferences:
+  syncfusion_flutter_charts: ^20.1.60+1
 
 dev_dependencies:
   flutter_test:

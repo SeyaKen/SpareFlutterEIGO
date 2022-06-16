@@ -1,9 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterstudeng/Home/home_screen.dart';
 import 'package:flutterstudeng/main_page.dart';
-import 'package:flutterstudeng/services/auth.dart';
 import 'package:flutterstudeng/services/sharedpref_helper.dart';
 
 class AuthService {

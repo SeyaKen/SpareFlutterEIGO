@@ -1,14 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterstudeng/Home/home_screen.dart';
 import 'package:flutterstudeng/mailSignin/mailAuth.dart';
 import 'package:flutterstudeng/mailSignin/verify.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class mailRegister extends StatefulWidget {
   final Function toggleView;
-  mailRegister(this.toggleView);
+  const mailRegister(this.toggleView);
 
   @override
   _mailRegisterState createState() => _mailRegisterState();

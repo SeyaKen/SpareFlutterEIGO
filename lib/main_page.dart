@@ -73,10 +73,10 @@ class _MainPageState extends State<MainPage> {
           ),
         ]),
       body: IndexedStack(
-        children: [
-          const HomeScreen(),
+        children: const [
+          HomeScreen(),
           ScoreReport(),
-          const ProfilePage(),
+          ProfilePage(),
         ],
         index: currenttab,
       ),
