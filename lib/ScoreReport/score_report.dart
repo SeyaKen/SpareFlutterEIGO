@@ -45,15 +45,15 @@ class _ScoreReportState extends State<ScoreReport> {
         crossAxisCount: 2,
         children: [
           InkWell(
-            // onTap: () {
-            //     Navigator.push(
-            //       context,
-            //       PageRouteBuilder(
-            //         pageBuilder: (_, __, ___) => ,
-            //         transitionDuration: const Duration(seconds: 0),
-            //       ),
-            //     );
-            // },
+            onTap: () {
+                Navigator.push(
+                  context,
+                  PageRouteBuilder(
+                    pageBuilder: (_, __, ___) => const ToeicScreen(),
+                    transitionDuration: const Duration(seconds: 0),
+                  ),
+                );
+            },
             child: Container(
               width: MediaQuery.of(context).size.width * 0.45,
               height: MediaQuery.of(context).size.width * 0.45,
