@@ -9,31 +9,34 @@ class ToeicScreen extends StatefulWidget {
 }
 
 class _ToeicScreenState extends State<ToeicScreen> {
-
+  final List<Color> gradientColors = [
+    Colors.white,
+    Colors.white,
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: LineChart(
-        LineChartData(
+      body: LineChart(LineChartData(
           minX: 0,
           maxX: 11,
           backgroundColor: const Color(0xff3800ff),
-          titlesData: LineTitles.getTitleData(),
+          titlesData: LineTitles.getTittleData(),
           gridData: FlGridData(
-              show: false,
-              ),
+            show: false,
+          ),
           lineBarsData: [
-            LineChartBarData(spots: [
-              const FlSpot(0, 700),
-              const FlSpot(2, 710),
-              const FlSpot(4, 720),
-              const FlSpot(6, 730),
-              const FlSpot(8, 790),
-              const FlSpot(9, 900),
-              const FlSpot(11, 990),
-            ],
-            color: Colors.white,
-            barWidth: 5,
+            LineChartBarData(
+              spots: [
+                FlSpot(0, 700),
+                FlSpot(2, 710),
+                FlSpot(4, 720),
+                FlSpot(6, 730),
+                FlSpot(8, 790),
+                FlSpot(9, 900),
+                FlSpot(11, 990),
+              ],
+              colors: gradientColors,
+              barWidth: 5,
             )
           ])),
     );
@@ -42,13 +45,26 @@ class _ToeicScreenState extends State<ToeicScreen> {
 
 class LineTitles {
   static getTittleData() => FlTitlesData(
-    show: true,
-    bottomTitles: SideTitles(
-      showTitles: true,
-      getTitlesWidget: (value) {
-        
-      },
-      margin: 8,
-    )
-  );
+      show: true,
+      bottomTitles: SideTitles(
+        showTitles: true,
+        reservedSize: 22,
+        getTextStyles: (value) => const TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+          fontSize: 16, 
+        ),
+        getTitles: (value) {
+          switch (value.toInt()) {
+            case 2:
+              return 'MAR';
+            case 5:
+              return 'JUN';
+            case 8:
+              return 'SEP';
+          }
+          return '';
+        },
+        margin: 8,
+      ));
 }
