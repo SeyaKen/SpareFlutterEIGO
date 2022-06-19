@@ -45,7 +45,7 @@ dependencies:
   font_awesome_flutter:
   path_provider:
   shared_preferences:
-  fl_chart: ^0.55.0
+  fl_chart: ^0.12.0
 
 dev_dependencies:
   flutter_test:
