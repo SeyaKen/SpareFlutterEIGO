@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterstudeng/Home/home_screen.dart';
-import 'package:flutterstudeng/ScoreReport/score_report.dart';
 import 'package:flutterstudeng/profile/profile_page.dart';
 
 class MainPage extends StatefulWidget {
@@ -59,13 +58,6 @@ class _MainPageState extends State<MainPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.show_chart ,
-              size: 30,
-            ),
-            label: 'スコアレポート',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
               Icons.account_circle,
               size: 30,
             ),
@@ -75,7 +67,6 @@ class _MainPageState extends State<MainPage> {
       body: IndexedStack(
         children: const [
           HomeScreen(),
-          ScoreReport(),
           ProfilePage(),
         ],
         index: currenttab,
